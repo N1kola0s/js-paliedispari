@@ -13,9 +13,9 @@ let user_word = String(prompt("Ciao, Inserisci una parola. Verificherò se è pa
 //Creo una funzione per capire se la parola inserita è palindroma
 
 function palindrome_word (){
-//Converto la parola in una sequenza di lettere che comporranno un array
+//Converto la parola in una sequenza di lettere che comporranno un array (appunto: oltre ad Array.from() si può usare anche il metodo .split(''))
 
-let array_word = user_word.split("");
+let array_word = Array.from(user_word);
 /* console.log(array_word) */
 
 //inverto l'ordine del mio array
@@ -23,7 +23,7 @@ let array_word = user_word.split("");
 let array_word_reverse = array_word.reverse();
 /* console.log(array_word_reverse); */
 
-//trasformo il mio array in una nuova parola (stringa) senza che gli elementi siano separati con le virgole
+//trasformo il mio array in una nuova parola (stringa) senza che gli elementi siano separati con le virgole (appunto: con .toString() restituisce gli elementi separati)
 
 let new_word = array_word_reverse.join("");
 /* console.log(new_word) */
