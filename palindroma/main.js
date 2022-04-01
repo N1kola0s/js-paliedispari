@@ -43,6 +43,9 @@ if (user_word === new_word){
 
 }
 
+//invoco il funzionamento della mia funzione
+palindrome_word()
+
 
 
 
