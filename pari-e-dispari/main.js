@@ -46,14 +46,17 @@ if (user_choice === "pari" || user_choice === "dispari"){
 
     } 
 
-
+    //invoco la funzione che genera un numero random da 1 a 5 da assegnare al pc
     let pc_random_num = getRandomInteger(1, 5);
     console.log(`Il numero del pc è : ${pc_random_num}`);
 
+    //sommiamo i due numeri
     let sum = user_num + pc_random_num ;
     console.log(`La somma dei due numeri è: ${sum}`);
     
     let result = even_odd(sum);
+
+    //Dichiariamo chi ha vinto
 
     if (result === user_choice){
 
@@ -73,8 +76,7 @@ if (user_choice === "pari" || user_choice === "dispari"){
 
 
 
-//generiamo con una funzione un numero random (da 1 a 5) per il computer
 
-//sommiamo i due numeri
 
-//Stabiliamo se la somma dei due numeri sia pari o dispari
+
+
